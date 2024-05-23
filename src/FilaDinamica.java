@@ -78,6 +78,59 @@ public class FilaDinamica {
         return valor;
     }
 
+    public int buscarMaior() {
+        if (inicio == null) {
+            System.out.println("A fila está vazia");
+        }
+
+        No atual = inicio;
+        int maiorValor = atual.getValor();
+
+        while (atual != null) {
+            if (atual.getValor() > maiorValor) {
+                maiorValor = atual.getValor();
+            }
+            atual = atual.getProximo();
+        }
+        System.out.println("Maior valor: " + maiorValor);
+        return maiorValor;
+    }
+
+    public int buscarMenor() {
+        if (inicio == null) {
+            System.out.println("A fila está vazia");
+        }
+
+        No atual = inicio;
+        int menorValor = atual.getValor();
+
+        while (atual != null) {
+            if (atual.getValor() < menorValor) {
+                menorValor = atual.getValor();
+            }
+            atual = atual.getProximo();
+        }
+        System.out.println("Menor valor: " + menorValor);
+        return menorValor;
+    }
+
+    public void calcularMedia(){
+        if (inicio == null) {
+            System.out.println("A fila esta vazia");
+            return;
+        }
+        No atual = inicio;
+        int soma = 0;
+        int contador = 0;
+
+        while (atual != null) {
+            soma += atual.getValor();
+            contador++;
+            atual = atual.getProximo();
+        }
+        System.out.println("A media de todos o elementos da fila é: " + soma/contador);
+    }
+
     public void quantidade() {
         System.out.println("O tamanho da Fila é " + tamanho + " posições");
     }

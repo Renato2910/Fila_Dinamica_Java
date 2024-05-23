@@ -7,12 +7,14 @@ public class Executora {
         filaDinamica.adicionar(4);
         filaDinamica.adicionar(5);
 
-//        filaDinamica.remover();
-//        filaDinamica.removerTodasOcorrencias(2);
-
         filaDinamica.exibir();
-//        filaDinamica.buscar(5);
-//        filaDinamica.quantidade();
+        filaDinamica.remover();
+        filaDinamica.removerTodasOcorrencias(2);
+        filaDinamica.buscar(5);
+        filaDinamica.buscarMaior();
+        filaDinamica.buscarMenor();
+        filaDinamica.calcularMedia();
+        filaDinamica.quantidade();
 
     }
 }
