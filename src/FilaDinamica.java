@@ -120,7 +120,7 @@ public class FilaDinamica {
             return;
         }
         No atual = inicio;
-        int soma = 0;
+        float soma = 0;
         int contador = 0;
 
         while (atual != null) {
